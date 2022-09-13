@@ -6,3 +6,4 @@ permalink: /about/
 
 # About Me
 
+I am a Stats 386 student.  
