@@ -1,9 +1,8 @@
 ---
 layout: post
-title:  How to 
+title:  Becoming Dangerous in the Infinite World of Information 
 date:   2022-09-26
 author: Alden
-title: Becoming Dangerous in the Infinite World of Information
 description: A fun and quick how to guide to prepare any dataset for analysis
 image: 
 ---
