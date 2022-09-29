@@ -107,5 +107,4 @@ https://stackoverflow.com/questions/36814100/pandas-to-numeric-for-multiple-colu
 
 And there we have it.  As we can see, we can now run analysis on this data.  The next time you can gather your own data for a project, I urge you to pick something that interests you.  Don't just try to get a dull dataset to finish the assignment.  There's so much interesting data out there.  As statisticians, we have the great privilege of analyzing everything and anything we want.  Think of any hobby or media you like, such as music, video games, Star Wars, etc., and there is a great opportunity to  showcase your skills to the world and having fun doing it. 
 
-![image](https://user-images.githubusercontent.com/112586829/193086713-d4eabe6c-0367-4f5d-926b-492a2decd2ae.png)
-
+![image](https://user-images.githubusercontent.com/112586829/193087388-115f55b4-5854-46d9-925e-3357eb3f411e.png)
