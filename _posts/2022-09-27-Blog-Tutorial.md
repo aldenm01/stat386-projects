@@ -11,8 +11,7 @@ Being a Statistics major, I often have to do projects that involve working with 
 in order to predict the speed of the candidate site, or the effect of restaurant ratings and the price of their food.  These was not exciting for me to analyze 
 personally, but I recognize their importance.  However, one of the reasons I enjoy statistics is for the potential one has to analyze the infinite amount of data
 available for free on the web.  This is why I do not understand why when many of my fellow students have the opportunity to take a sample of data, they decide to
-sample the frequency of colors from M&M's.  I want to show how data wrangling can be made easy and fun.  As I and many other students have been taught in their childhoods,
-how to liken the data unto ourselves.
+sample the frequency of colors from M&M's.  I can see why Data Wrangling can be frustrating.  In this article, I am going to show some common errors that can happen when data wrangling, and how to efficiently deal with them in an easy and fun way. 
 
 For this example, I have decided to analyze data from something near to my heart, Fire Emblem.
 
