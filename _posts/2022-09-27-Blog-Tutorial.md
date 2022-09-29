@@ -6,9 +6,7 @@ author: Alden
 description: A fun and quick how to guide to prepare any dataset for analysis
 image: https://user-images.githubusercontent.com/112586829/193084903-f030efe8-63d2-48ab-9d82-0a571d332221.png
 ---
- 
- # In case a TA sees this before the 30th, this post is not ready to be graded yet.  I have received accommodations and Dr. Tass has given me until Friday (9/30/2022) to finish it.
- 
+
 The prophet Nephi in the Book of Mormon preaches to his people to liken the scriptures unto themselves.  I believe as statisticians, we should also liken our statistics unto our own lives.  Statistic students shouldn't be analyzing the proportion of the colors of M&Ms.  There is an infinite world of data at the click of a button.  If you are already going to spend 4 years slaving away in TA Labs, you might as well have fun while you're doing it.  Data wrangling data is one of the most important skills in the statistics field. Mastering it will broaden the data you can analyze exponentially and take your research to the next level.
 
 
