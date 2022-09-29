@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Becoming Dangerous in the Infinite World of Information Manipulating ANY Dataset
+title:  Stop Studying Dull Stats
 date:   2022-09-26
 author: Alden
 description: Title for my Tutorial
