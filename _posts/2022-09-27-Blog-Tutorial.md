@@ -3,8 +3,8 @@ layout: post
 title:  How to 
 date:   2022-09-26
 author: Alden
-description: Becoming Dangerous in the Infinite World of Information
- Manipulating ANY Dataset
+title: Becoming Dangerous in the Infinite World of Information
+description: A fun and quick how to guide to prepare any dataset for analysis
 image: 
 ---
  
