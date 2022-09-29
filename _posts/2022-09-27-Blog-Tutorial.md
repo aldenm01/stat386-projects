@@ -4,7 +4,7 @@ title:  Stop Studying Dull Stats
 date:   2022-09-26
 author: Alden
 description: A fun and quick how to guide to prepare any dataset for analysis
-image: https://github.com/aldenm01/stat386-projects/blob/main/assets/images/BlogCover.jpg
+image: https://user-images.githubusercontent.com/112586829/193084903-f030efe8-63d2-48ab-9d82-0a571d332221.png
 ---
  
  # In case a TA sees this before the 30th, this post is not ready to be graded yet.  I have received accommodations and Dr. Tass has given me until Friday (9/30/2022) to finish it.
@@ -18,7 +18,6 @@ The prophet Nephi in the Book of Mormon preaches to his people to liken the scri
 As a student, I would often have trouble finding data to analyze that I would be interested in.  However, this is where likening statistics unto ourselves makes data wrangling interesting and fun.  In addition to statistics, I also have a love for gaming, so for this example, I have decided to analyze data from one of my favorite Nintendo classics, Fire Emblem.
 
 
-![Eyecatch_1](https://github.com/aldenm01/stat386-projects/blob/main/assets/images/Fire_Emblem_Shadow_Dragon_Blade_of_Light_4.jpg)
 ![image](https://user-images.githubusercontent.com/112586829/193084294-b12ff40f-bcf6-403c-9805-dcf89a03ebd8.png)
 
 
@@ -26,7 +25,6 @@ If you have not played Fire Emblem, briefly said, it is a tactical role playing 
 and talents to reclaim the country of Archenea.  If a unit defeats enough enemy soldiers, they gain experience and level up.  Each character has eight stats that have a different percent chance of increasing by one each time they level up, but for the sake of this post, we will focus on strength.  The higher the strength a unit has, the more damage they deal.
 
 
-![Test Image](https://github.com/aldenm01/stat386-projects/blob/main/assets/images/Fire_Emblem_Battle.png)
 ![image](https://user-images.githubusercontent.com/112586829/193084325-fd75b850-d9bd-4498-90aa-359375820758.png)
 
 
@@ -36,8 +34,6 @@ Let's try to put this in context.  Let's say I just got hired to create the next
 a cast of characters in a role playing game, you want to be sure they are not too strong so it is not too easy, or too weak, as to be unfairly challenging.  If this fails, you might end up with the unfortunate situation below.  I want to analyze growth rate data for the strength stat for the character on a previous title to do this.  For this example, I will be gathering data on the first Fire Emblem game released in 1990.
 
 
-![Test Image](https://github.com/aldenm01/stat386-projects/blob/main/assets/images/Wendy.png)
-![Test Image](https://github.com/aldenm01/stat386-projects/blob/main/assets/images/Percival.png)
 ![image](https://user-images.githubusercontent.com/112586829/193084378-1f41ce7e-7cf9-4812-b23d-afb7d369c52c.png)
 ![image](https://user-images.githubusercontent.com/112586829/193084400-2c3bd1c5-2afe-4282-a4a8-8b5ae22894d3.png)
 
@@ -62,7 +58,6 @@ BOLTable.head()
 Remember, tables that have been scraped in this method are stored in a list of pandas dataframes that you have to reference.  If there were two tables, I could reference it by entering BOLGrowths[1].
 
 
-![Test Image](https://github.com/aldenm01/stat386-projects/blob/main/assets/images/Table_1.png)
 ![image](https://user-images.githubusercontent.com/112586829/193084482-40212276-5b90-4627-a7a4-3d2cf8076eab.png)
 
 
@@ -71,7 +66,6 @@ Remember, tables that have been scraped in this method are stored in a list of p
 With our table here, it looks like we can use simple python functions to find the average of the strength column with a line such as sum[BOLTable['Str']], but this isn't actually the case.
 
 
-![Test Image](https://github.com/aldenm01/stat386-projects/blob/main/assets/images/Error_0.png)
 ![image](https://user-images.githubusercontent.com/112586829/193084528-d53ae63d-5e44-4fa9-9e72-249e9d9a77be.png)
 
 
@@ -81,7 +75,6 @@ BOLTable['Str'] = pd.to_numeric(BOLTable['Str'])
 However, we run into another error...
 
 
-![Test Image](https://github.com/aldenm01/stat386-projects/blob/main/assets/images/Error_2.png)
 ![image](https://user-images.githubusercontent.com/112586829/193084572-7ff7f7fd-8589-4f77-8e89-f59c63db494d.png)
 
 
@@ -90,7 +83,6 @@ However, we run into another error...
 If we take a look at the webpage's data, we can see that there are rows in the table that repeat the column names.  
 
 
-![Test Image](https://github.com/aldenm01/stat386-projects/blob/main/assets/images/Serenes.png)
 ![image](https://user-images.githubusercontent.com/112586829/193084616-313fe6b7-4280-4acd-9cfe-705b42b9d46a.png)
 
 
@@ -99,7 +91,6 @@ This was done intentionally.  Normally, if an internet surfer was looking at thi
 BOLTable = BOLTable[BOLTable['Str'].str.contains('Str')==False] 
 
 
-![Test Image](https://github.com/aldenm01/stat386-projects/blob/main/assets/images/Solution_1_Results.png)
 ![image](https://user-images.githubusercontent.com/112586829/193084787-9a46cd53-2a00-44e1-ae78-cfb612f0b39d.png)
 
 
@@ -112,12 +103,10 @@ https://stackoverflow.com/questions/36814100/pandas-to-numeric-for-multiple-colu
 ## Success!!  A Perfectly Clean Data Set
 
 
-![Test Image](https://github.com/aldenm01/stat386-projects/blob/main/assets/images/New_Table.png)
 ![image](https://user-images.githubusercontent.com/112586829/193084842-7624ff2a-bc61-4f19-967a-877c6c37dd6d.png)
 
 
 And there we have it.  As we can see, we can now run analysis on this data.  When you start a project where you can gather the data, I urge you to pick something that interests you.  Don't just try to get a simple dataset to finish the assignment.  There's so much great data out there.  As statisticians, we have the great privelage of analyzing everything and anything we want.  Think of any hobby or media you like, such as music, video games, Star Wars, etc., and there is a great opportunity to  showcase your skills to the world and having fun while doing it. 
 
-![Test Image](https://github.com/aldenm01/stat386-projects/blob/main/assets/images/BlogCover.jpg)
 ![image](https://user-images.githubusercontent.com/112586829/193084903-f030efe8-63d2-48ab-9d82-0a571d332221.png)
 
