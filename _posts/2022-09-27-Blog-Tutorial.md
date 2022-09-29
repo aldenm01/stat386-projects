@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Becoming Dangerous in the Infinite World of Information
+title:  How to Take the Boredom out of Stats with Data Wrangling
 date:   2022-09-26
 author: Alden
 description: A fun and quick how to guide to prepare any dataset for analysis
@@ -11,7 +11,7 @@ Being a Statistics major, I often have to do projects that involve working with 
 in order to predict the speed of the candidate site, or the effect of restaurant ratings and the price of their food.  These was not exciting for me to analyze 
 personally, but I recognize their importance.  However, one of the reasons I enjoy statistics is for the potential one has to analyze the infinite amount of data
 available for free on the web.  This is why I do not understand why when many of my fellow students have the opportunity to take a sample of data, they decide to
-sample the frequency of colors from M&M's.  I can see why Data Wrangling can be frustrating.  In this article, I am going to show some common errors that can happen when data wrangling, and the fear of all coding beginners, joining tables in the Pandas library in Python.
+sample the frequency of colors from M&M's.  I can see why Data Wrangling can be frustrating.  In this article, I am going to show some common errors that can happen when data wrangling, and the fear of all coding beginners, joining tables in the Pandas library in Python.  (The join statement is a maybe).
 
 For this example, I have decided to analyze data from something near to my heart, Fire Emblem.
 
@@ -44,6 +44,7 @@ BOLTable.head()
 
 Remember, tables that have been scraped in this method are stored in a pandas dataframe that you have to reference like this.  If there are multiple tables, you can reference them by increasing this number (Ex: BOLGrowths[1])
 
+# Replace this with image later
 Name	HP	Str	Skl	Wlv	Spd	Lck	Def	Res
 0	Marth	90	50	40	30	50	70	20	0
 1	Caeda	50	20	70	80	90	70	20	0
@@ -53,5 +54,35 @@ Name	HP	Str	Skl	Wlv	Spd	Lck	Def	Res
 
 ### Issue 1: Incompatible Data Types in Table
 
-With our table here, it looks like we can simply use some python functions in order  to find the average of the strenght column with a line such as sum[BOLTable['Str']], but this isn't actually the case.  See the error below.
+With our table here, it looks like we can simply use some python functions in order  to find the average of the strenght column with a line such as sum[BOLTable['Str']], but this isn't actually the case.
 
+![Test Image](https://github.com/aldenm01/stat386-projects/blob/main/assets/images/Error_0.png)
+
+This can be solved by running a pd.to_numeric statement like this:
+BOLTable['Str'] = pd.to_numeric(BOLTable['Str'])
+
+However, we run into another error...
+
+# Insert Error
+
+### Issue 2: Unwanted Rows
+
+If we take a look at the link that has the data, we can see that there are a few rows in the table that repeat the column names.  This is done intentionally.  Normally, if a reader was 
+
+## Add a visual of this that's on Serenes Forest
+
+looking at this table, they may scroll down far enough to obscure the columns, and remembering the columns while looking down the list would be frustrating.  However, that causes errors for us since we cannot take run pd.to_numeric on strings. We could go through and remove each row individually that has this problem, but I like to use less code when I can, so here's a more efficient line.  The Str column value for the bad rows has the string, 'Str' as the value, so this gets rid of those rows, much like how grep -v 'argument' works in the command line.
+
+BOLTable = BOLTable[BOLTable['Str'].str.contains('Str')==False] 
+
+Now the above code works.  If you compare the table from the data on the link, you can see that it has been removed.  We can now run the above pd.to_numeric statement without error.  If I wanted to do all the columns, that would be easy too.  If you're interested on how this can be done, this page is a great resource.
+
+https://stackoverflow.com/questions/36814100/pandas-to-numeric-for-multiple-columns
+
+### How to take your Wrangling to the Next Level: Joining
+
+I am a Teaching assistant, and I often get students telling me, "I just don't understand how joining tables works."  I am going to 
+
+### Success!!  A Perfectly Clean Data Set
+
+And there we have it.  As we can see, we can now run analysis on this data.  As fellow statisticians, I highly recommend that you seize the opportunity to be exciting when 
