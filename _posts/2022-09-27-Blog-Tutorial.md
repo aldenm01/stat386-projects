@@ -11,6 +11,10 @@ image: https://github.com/aldenm01/stat386-projects/blob/main/assets/images/Blog
  
 The prophet Nephi in the Book of Mormon preaches to his people to liken the scriptures unto themselves.  I believe as statisticians, we should also liken our statistics unto our own lives.  Statistic students shouldn't be analyzing the proportion of the colors of M&Ms.  There is an infinite world of data at the click of a button.  If you are already going to spend 4 years slaving away in TA Labs, you might as well have fun while you're doing it.  Data wrangling data is one of the most important skills in the statistics field. Mastering it will broaden the data you can analyze exponentially and take your research to the next level.
 
+
+![image](https://user-images.githubusercontent.com/112586829/193083046-a07f98c3-2fd0-4c60-b293-e90ae78ec103.png)
+
+
 As a student, I would often have trouble finding data to analyze that I would be interested in.  However, this is where likening statistics unto ourselves makes data wrangling interesting and fun.  In addition to statistics, I also have a love for gaming, so for this example, I have decided to analyze data from one of my favorite Nintendo classics, Fire Emblem.
 
 
