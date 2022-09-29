@@ -28,7 +28,7 @@ and talents to reclaim the country of Archenea.  If a unit defeats enough enemy 
 ![Test Image](https://github.com/aldenm01/stat386-projects/blob/main/assets/images/Fire_Emblem_Battle.png)
 
 
-### Setting the Stage
+## Setting the Stage
 
 Let's try to put this in context.  Let's say I just got hired to create the next Fire Emblem game.  When designing
 a cast of characters in a role playing game, you want to be sure they are not too strong so it is not too easy, or too weak, as to be unfairly challenging.  If this fails, you might end up with the unfortunate situation below.  I want to analyze growth rate data for the strength stat for the character on a previous title to do this.  For this example, I will be gathering data on the first Fire Emblem game released in 1990.
@@ -41,9 +41,9 @@ a cast of characters in a role playing game, you want to be sure they are not to
 The data I used can be found in the link below.
 https://serenesforest.net/shadow-dragon-and-the-blade-of-light/characters/growth-rates/
 
-## With the stage set, let's get wrangling
+## With the stage set, let's get wrangling!
 
-### Webscraping:
+## Webscraping:
 
 Probably the easiest part of data wrangling.  I personally love finding data online and analyzing it.  Bottom line, if there is a table on a site, it can be scraped.  The internet has enough information to last a statistician several lifetimes.  This can be done using the the pd.read_html function in pandas.  This is the command I used my table.  You may need to add the second line if you are getting 403 forbidden errors while trying to scrape your data.
 
@@ -61,7 +61,7 @@ Remember, tables that have been scraped in this method are stored in a list of p
 ![Test Image](https://github.com/aldenm01/stat386-projects/blob/main/assets/images/Table_1.png)
 
 
-### Issue 1: Incompatible Data Types in Table
+## Issue 1: Incompatible Data Types in Table
 
 With our table here, it looks like we can use simple python functions to find the average of the strength column with a line such as sum[BOLTable['Str']], but this isn't actually the case.
 
@@ -78,7 +78,7 @@ However, we run into another error...
 ![Test Image](https://github.com/aldenm01/stat386-projects/blob/main/assets/images/Error_2.png)
 
 
-### Issue 2: Unwanted Rows
+## Issue 2: Unwanted Rows
 
 If we take a look at the webpage's data, we can see that there are rows in the table that repeat the column names.  
 
@@ -100,7 +100,7 @@ Now the above code (BOLTable['Str] = pd.to_numeric(BOLTable['Str']) works.  If y
 
 https://stackoverflow.com/questions/36814100/pandas-to-numeric-for-multiple-columns
 
-### Success!!  A Perfectly Clean Data Set
+## Success!!  A Perfectly Clean Data Set
 
 
 ![Test Image](https://github.com/aldenm01/stat386-projects/blob/main/assets/images/New_Table.png)
