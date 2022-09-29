@@ -18,3 +18,4 @@ how to liken the data unto ourselves.
 For this example, I have decided to analyze data from something near to my heart, Fire Emblem.
 
 ![Test Image](https://raw.githubusercontent.com/esnt/stat386-projects/main/assets/images/Fire_Emblem_Title_Screen.png)
+
