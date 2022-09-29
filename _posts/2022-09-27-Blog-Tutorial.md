@@ -38,7 +38,7 @@ Let's try to put this in context.  Let's say I just got hired to create the next
 
 
 The data I used can be found in the link below.
-https://serenesforest.net/shadow-dragon-and-the-blade-of-light/characters/growth-rates/
+'https://serenesforest.net/shadow-dragon-and-the-blade-of-light/characters/growth-rates/'
 
 ## With the stage set, let's get wrangling!
 
@@ -97,7 +97,7 @@ After running this, we can see if you compare the old data to this, that row 20 
 
 Now the above code (BOLTable['Str] = pd.to_numeric(BOLTable['Str']) works.  If you compare the table from the data on the link, you can see that it has been removed.  We can now run the above pd.to_numeric statement without error.  If I wanted to do all the columns, that would be easy too.  If you're interested on how this can be done, this page is a great resource.
 
-https://stackoverflow.com/questions/36814100/pandas-to-numeric-for-multiple-columns
+'https://stackoverflow.com/questions/36814100/pandas-to-numeric-for-multiple-columns'
 
 ## Success!!  A Perfectly Clean Data Set
 
