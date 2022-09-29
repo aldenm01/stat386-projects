@@ -15,14 +15,14 @@ The prophet Nephi in the Book of Mormon preaches to his people to liken the scri
 ![image](https://user-images.githubusercontent.com/112586829/193083046-a07f98c3-2fd0-4c60-b293-e90ae78ec103.png)
 
 
-As a student, I would often have trouble finding data to analyze that I would be interested in.  However, this is where likening statistics unto ourselves makes data wrangling interesting and fun.  In addition to statistics, I also have a love for gaming, so for this example, I have decided to analyze data from one of my favorite Nintendo classics, Fire Emblem.
+I often have trouble finding data to analyze that I find interesting.  However, this is where likening statistics unto ourselves makes data wrangling engaging and fun.  For example I love gaming, so for this example, I have decided to analyze data from one of my favorite Nintendo classics, Fire Emblem.
 
 
 ![image](https://user-images.githubusercontent.com/112586829/193084294-b12ff40f-bcf6-403c-9805-dcf89a03ebd8.png)
 
 
 If you have not played Fire Emblem, briefly said, it is a tactical role playing game where you control an army of different soldiers with their own personalities
-and talents to reclaim the country of Archenea.  If a unit defeats enough enemy soldiers, they gain experience and level up.  Each character has eight stats that have a different percent chance of increasing by one each time they level up, but for the sake of this post, we will focus on strength.  The higher the strength a unit has, the more damage they deal.
+and talents to reclaim the country of Archenea.  If a unit defeats enough enemy soldiers, they gain experience and level up.  Each character has eight stats that have a different chance of increasing by one each time they level up, but for the sake of this post, we will focus on strength.  The higher the strength a unit has, the more damage they deal.
 
 
 ![image](https://user-images.githubusercontent.com/112586829/193084325-fd75b850-d9bd-4498-90aa-359375820758.png)
@@ -30,8 +30,7 @@ and talents to reclaim the country of Archenea.  If a unit defeats enough enemy 
 
 ## Setting the Stage
 
-Let's try to put this in context.  Let's say I just got hired to create the next Fire Emblem game.  When designing
-a cast of characters in a role playing game, you want to be sure they are not too strong so it is not too easy, or too weak, as to be unfairly challenging.  If this fails, you might end up with the unfortunate situation below.  I want to analyze growth rate data for the strength stat for the character on a previous title to do this.  For this example, I will be gathering data on the first Fire Emblem game released in 1990.
+Let's try to put this in context.  Let's say I just got hired to create the next Fire Emblem game.  When designing a cast of characters in a role playing game, you want to be sure they are not too strong so it is not too easy, or too weak, as to be unfairly challenging.  If this fails, you might end up with the unfortunate situation below.  I want to analyze growth rate data for the strength stat for the character on a previous title to do this.  For this example, I will be gathering data on the first Fire Emblem game released in 1990.
 
 
 ![image](https://user-images.githubusercontent.com/112586829/193084378-1f41ce7e-7cf9-4812-b23d-afb7d369c52c.png)
@@ -45,7 +44,7 @@ https://serenesforest.net/shadow-dragon-and-the-blade-of-light/characters/growth
 
 ## Webscraping:
 
-Probably the easiest part of data wrangling.  I personally love finding data online and analyzing it.  Bottom line, if there is a table on a site, it can be scraped.  The internet has enough information to last a statistician several lifetimes.  This can be done using the the pd.read_html function in pandas.  This is the command I used my table.  You may need to add the second line if you are getting 403 forbidden errors while trying to scrape your data.
+This is likely the easiest part of data wrangling.  I personally love finding data online and analyzing it.  Bottom line, if there is a table on a site, it can be scraped.  The internet has enough information to last a statistician several lifetimes.  This can be done using the the pd.read_html function in pandas.  This is the command I used my table.  You may need to add the second line if you are getting 403 forbidden errors while trying to scrape your data.
 
 url = 'https://serenesforest.net/shadow-dragon-and-the-blade-of-light/characters/growth-rates/'
 r = requests.get(url)
@@ -106,7 +105,7 @@ https://stackoverflow.com/questions/36814100/pandas-to-numeric-for-multiple-colu
 ![image](https://user-images.githubusercontent.com/112586829/193084842-7624ff2a-bc61-4f19-967a-877c6c37dd6d.png)
 
 
-And there we have it.  As we can see, we can now run analysis on this data.  When you start a project where you can gather the data, I urge you to pick something that interests you.  Don't just try to get a simple dataset to finish the assignment.  There's so much great data out there.  As statisticians, we have the great privelage of analyzing everything and anything we want.  Think of any hobby or media you like, such as music, video games, Star Wars, etc., and there is a great opportunity to  showcase your skills to the world and having fun while doing it. 
+And there we have it.  As we can see, we can now run analysis on this data.  The next time you can gather your own data for a project, I urge you to pick something that interests you.  Don't just try to get a dull dataset to finish the assignment.  There's so much interesting data out there.  As statisticians, we have the great privilege of analyzing everything and anything we want.  Think of any hobby or media you like, such as music, video games, Star Wars, etc., and there is a great opportunity to  showcase your skills to the world and having fun doing it. 
 
-![image](https://user-images.githubusercontent.com/112586829/193084903-f030efe8-63d2-48ab-9d82-0a571d332221.png)
+![image](https://user-images.githubusercontent.com/112586829/193086713-d4eabe6c-0367-4f5d-926b-492a2decd2ae.png)
 
