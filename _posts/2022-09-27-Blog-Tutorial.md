@@ -15,4 +15,6 @@ available for free on the web.  This is why I do not understand why when many of
 sample the frequency of colors from M&M's.  I want to show how data wrangling can be made easy and fun.  As I and many other students have been taught in their childhoods,
 how to liken the data unto ourselves.
 
-For this example, I have decided to analyze data from something near to my heart.  The growth rates of the characters in Fire Emblem.  
+For this example, I have decided to analyze data from something near to my heart, Fire Emblem.
+
+![Test Image](https://raw.githubusercontent.com/esnt/stat386-projects/main/assets/images/Fire_Emblem_Title_Screen.png)
