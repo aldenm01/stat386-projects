@@ -7,6 +7,8 @@ description: A fun and quick how to guide to prepare any dataset for analysis
 image: https://github.com/aldenm01/stat386-projects/blob/main/assets/images/BlogCover.jpg
 ---
  
+ # In case a TA sees this before the 30th, this post is not ready to be graded yet.  I have received accommodations and Dr. Tass has given me until Friday (9/30/2022) to finish it.
+ 
 The prophet Nephi in the Book of Mormon preaches to his people to liken the scriptures unto themselves.  I believe as statisticians, we should also liken our statistics unto our own lives.  Statistic students shouldn't be analyzing the proportion of the colors of M&Ms.  There is an infinite world of data at the click of a button.  If you are already going to spend 4 years slaving away in TA Labs, you might as well have fun while you're doing it when possible.  Gathering and manipulating data is one of the most important skills of someone in the statistics field.  In this example, I am going to show how to harness the infinite power of statistics through what many stats students who are learning to code face, data Wrangling.  I am going to show some common errors that can happen when data wrangling, and the fear of all coding beginners, joining tables in the Pandas library in Python.  (The join statement is a maybe).
 
 I love statistics and gaming.  As a student, I would often have trouble finding data to analyze that I would be interested in.  However, this is where likening statistics unto ourselves makes data wrangling interesting and fun.  For this example, I have decided to analyze data from a Nintendo classic, Fire Emblem.
