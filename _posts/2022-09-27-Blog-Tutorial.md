@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  How to Take the Boredom out of Stats
+title:  Stop Studying Boring Stats
 date:   2022-09-26
 author: Alden
 description: A fun and quick how to guide to prepare any dataset for analysis
@@ -34,7 +34,7 @@ a cast of characters in a role playing game, you want to be sure they are not to
 ![Test Image](https://github.com/aldenm01/stat386-projects/blob/main/assets/images/Percival.png)
 
 
-The data I used can be found in the links below.
+The data I used can be found in the link below.
 https://serenesforest.net/shadow-dragon-and-the-blade-of-light/characters/growth-rates/
 
 ### Webscraping:
@@ -55,7 +55,7 @@ Remember, tables that have been scraped in this method are stored in a pandas li
 
 ### Issue 1: Incompatible Data Types in Table
 
-With our table here, it looks like we can simply use some python functions in order  to find the average of the strenght column with a line such as sum[BOLTable['Str']], but this isn't actually the case.
+With our table here, it looks like we can simply use some python functions in order  to find the average of the strength column with a line such as sum[BOLTable['Str']], but this isn't actually the case.
 
 
 ![Test Image](https://github.com/aldenm01/stat386-projects/blob/main/assets/images/Error_0.png)
