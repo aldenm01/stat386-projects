@@ -15,5 +15,5 @@ sample the frequency of colors from M&M's.  I can see why Data Wrangling can be 
 
 For this example, I have decided to analyze data from something near to my heart, Fire Emblem.
 
-![Test Image](https://github.com/aldenm01/stat386-projects/blob/main/assets/images/Fire_Emblem_Title_Screen.png)
+![Test Image](https://github.com/aldenm01/stat386-projects/blob/main/assets/images/Fire_Emblem_Shadow_Dragon_Blade_of_Light_4.jpg)
 
