@@ -48,8 +48,9 @@ r = requests.get(url)
 BOLGrowths = pd.read_html(r.text)
 BOLTable = BOLGrowths[0]
 BOLTable.head()
+(BOL stands for Blade of Light)
 
-Remember, tables that have been scraped in this method are stored in a pandas list that you have to reference like this.  If there were two tables, I could reference it by entering this(Ex: BOLGrowths[1])
+Remember, tables that have been scraped in this method are stored in a list of pandas dataframes that you have to reference.  If there were two tables, I could reference it by entering this(Ex: BOLGrowths[1])
 
 
 ![Test Image](https://github.com/aldenm01/stat386-projects/blob/main/assets/images/Table_1.png)
