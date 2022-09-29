@@ -48,9 +48,10 @@ r = requests.get(url)
 BOLGrowths = pd.read_html(r.text)
 BOLTable = BOLGrowths[0]
 BOLTable.head()
-(BOL stands for Blade of Light)
 
-Remember, tables that have been scraped in this method are stored in a list of pandas dataframes that you have to reference.  If there were two tables, I could reference it by entering this(Ex: BOLGrowths[1])
+(Note: BOL stands for Blade of Light)
+
+Remember, tables that have been scraped in this method are stored in a list of pandas dataframes that you have to reference.  If there were two tables, I could reference it by entering BOLGrowths[1].
 
 
 ![Test Image](https://github.com/aldenm01/stat386-projects/blob/main/assets/images/Table_1.png)
@@ -81,7 +82,7 @@ If we take a look at the webpage's data, we can see that there are rows in the t
 ![Test Image](https://github.com/aldenm01/stat386-projects/blob/main/assets/images/Serenes.png)
 
 
-This was done intentionally.  Normally, if a reader was looking at this table, they may scroll down far enough to obscure the columns, and remembering the columns while looking down the list would be frustrating.  However, that causes errors for us since we cannot take run pd.to_numeric on strings. We could go through and remove each row individually that has this problem, but I like to use less code when I can, so here's a more efficient line. The Str column value for the bad rows has the string, 'Str' as the value, so this gets rid of those rows, much like how grep -v 'argument' works in the command line.
+This was done intentionally.  Normally, if an internet surfer was looking at this table, he/she may scroll down far enough to obscure the columns, and remembering the columns while looking down the list would be frustrating.  However, this causes errors since we cannot take run pd.to_numeric on strings. We could go through and remove each row individually that has this problem, but I like to use less lines when I can, so here's a more efficient solution. The Str column value for the bad rows has the string, 'Str' as the value, so this gets rid of those rows, much like how grep -v 'argument' works in the command line.
 
 BOLTable = BOLTable[BOLTable['Str'].str.contains('Str')==False] 
 
@@ -102,3 +103,5 @@ https://stackoverflow.com/questions/36814100/pandas-to-numeric-for-multiple-colu
 
 
 And there we have it.  As we can see, we can now run analysis on this data.  When you start a project where you can gather the data, I urge you to pick something that interests you.  Don't just try to get a simple dataset to finish the assignment.  There's so much great data out there.  As statisticians, we have the great privelage of analyzing everything and anything we want.  Think of any hobby or media you like, such as music, video games, Star Wars, etc., and there is a great opportunity to  showcase your skills to the world and having fun while doing it. 
+
+![Test Image](https://github.com/aldenm01/stat386-projects/blob/main/assets/images/BlogCover.jpg)
