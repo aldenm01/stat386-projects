@@ -17,3 +17,5 @@ For this example, I have decided to analyze data from something near to my heart
 
 ![Test Image](https://github.com/aldenm01/stat386-projects/blob/main/assets/images/Fire_Emblem_Shadow_Dragon_Blade_of_Light_4.jpg)
 
+If you have not played Fire Emblem, briefly said, it is a tactical role playing game where you control an army of different soldiers with their own personalities
+and strengths.  
