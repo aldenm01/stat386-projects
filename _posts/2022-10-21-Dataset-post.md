@@ -7,7 +7,7 @@ description: A quick overview on how I gathered data from video games for game d
 image: https://user-images.githubusercontent.com/112586829/197297566-24c3e4f4-a966-43b8-8207-bd3b93b6736a.png
 ---
 
-Datasets are blood of a statistician.  Just like how musicians can't perform without scores, statisticians can't explore data without datasets.  What if there are no dataset of what you want to research?  In this case, data scientists must make their own.  When creating a dataset (especially when combining tables from several different sources), there are countless ways that it can go wrong and tiny details that statisticians have to keep in mind.  I will be showing techniques of how to manipulate data in a dataset, as well as problems that can occur during the webscraping process.  
+Datasets are the blood of a statistician.  Just like how musicians can't perform without scores, statisticians can't explore data without datasets.  What if there are no dataset of what you want to research?  In this case, data scientists must make their own.  When creating a dataset (especially when combining tables from several different sources), there are countless ways that it can go wrong and tiny details that statisticians have to keep in mind.  I will be showing techniques of how to manipulate data in a dataset, as well as problems that can occur during the webscraping process.  
 
 ![image](https://user-images.githubusercontent.com/112586829/197303980-1f9c257e-ae22-4ada-9996-f492c8ce74d2.png)
 
