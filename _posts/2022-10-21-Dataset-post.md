@@ -7,25 +7,25 @@ description: A quick overview on how I gathered data from video games for game d
 image: https://user-images.githubusercontent.com/112586829/197297566-24c3e4f4-a966-43b8-8207-bd3b93b6736a.png
 ---
 
-Datasets are the blood of a statistician.  Just like how musicians can't perform without scores, statisticians can't explore data without datasets.  What if there are no dataset of what you want to research?  In this case, data scientists must make their own.  When creating a dataset (especially when combining tables from several different sources), there are countless ways that it can go wrong and tiny details that statisticians have to keep in mind.  I will be showing techniques of how to manipulate data in a dataset, as well as problems that can occur during the webscraping process.  
+Datasets are the blood of a statistician.  Just like how musicians can't perform without scores, statisticians can't explore data without datasets.  What if there are no datasets of what you want to research?  In this case, data scientists must make their own.  When creating a dataset (especially when combining tables from several different sources), there are many steps statisticians must take before they can explore their data.  I will be showing techniques of how to manipulate tables in a dataset, as well as problems that can occur during the webscraping process using the requests package in Python.  
 
 ![image](https://user-images.githubusercontent.com/112586829/197303980-1f9c257e-ae22-4ada-9996-f492c8ce74d2.png)
 
 ## A Brief Recap
 
-The dataset I created is a joined dataframe of the characters in the classic Nintendo series, Fire Emblem.  I explained the basic premise of the game in my previous blog post, but in case you haven't read it, Fire Emblem is a tactical role playing game where you control an army of soldiers each with their own unique designs, personalities, and strengths.  As they defeat enemies, they level up over time.  Each unit has several stats that have a different percent chance of increasing by one.  I have attached a visual for clarity.  
+The dataset I created is a joined dataframe of the characters in the classic Nintendo series, Fire Emblem.  I explained the basic premise of the game in my previous blog post, but in case you haven't read it, Fire Emblem is a tactical war simulation game where you control an army of soldiers each with their own unique designs, personalities, and strengths.  As they defeat enemies, they level up over time.  Each unit has several stats that have a different percent chance of increasing by one when they level up.  I have attached a visual for clarity.  
 
 ![image](https://user-images.githubusercontent.com/112586829/197303006-1a749c1b-b131-4269-b7f5-af2a79414152.png)
 
-In this image, this cavalier has just leveled up and has leveled up his Hit Points (80% chance), Strength (60% chance), and Spd (40% chance).  Each character has a different spread of percentages for their growth rates.
+In this image, this cavalier has just leveled up and has increased his Hit Points (80% chance), Strength (60% chance), and Spd (40% chance) by one point.  Each character has a different spread of percentages for their growth rates.
 
 ### Why make a dataset like this?  What is the motivation?
 
-As a huge fan of both data exploration and game design, I want to be able to compare different variables between games to better understand how the developers balanced the difficulty.  By making a dataset of my own, I have a convenient way to import the data into a program and explore it myself.  Since this data has been public for several years, I see no trouble webscraping it with the requests package in python.
+As a huge fan of both data exploration and game design, I want to be able to compare different variables between different games in the series to better understand how the developers balanced the difficulty.  By making a dataset of my own, I have a convenient way to import the data into a program and take stratified samples.  Since this data has been public for several years, I see no trouble webscraping it with the requests package in python.
 
 ### Part 1: The Basics
 
-For most of the tables in the dataset, I used the requests package and the pd.read_html() function in python. This chunk of code like this one is usually good enough if there is only one table on the page.
+For the tables in the dataset, I used the requests package and the pd.read_html() function in python. This chunk of code like this one is usually good enough if there is only one table on the page.
 
 ![image](https://user-images.githubusercontent.com/112586829/197304812-9a76c504-efb7-4d1f-93a0-e754405398b2.png)
 
@@ -35,17 +35,17 @@ Note: The reason that I needed to assign RDTable to RDGrowths[0] is because pd_.
 
 ### Part 2: Joining Data
 
-While the data created by the above two code chunks is good, I want to increase the versatility of this data.  In addition to the growth rates of the characters, I think it's also important to include their class, origin game, and how many spaces they can move on the map.  Being able to analyze different units based on class is vital for the game design of Fire Emblem, since it is important to make sure that knights in heavy armor do not raise their Speed stat too much, or not increase strength enough, as it breaks the immersion that the unit is wearing heavy armor.
+While the data created by the above two code chunks is good, I want to increase the versatility of this data.  In addition to the growth rates of the characters, I think it's also important to include their class, origin game, and how many spaces they can move on the map.  Being able to analyze different units based on class is vital for the game design of Fire Emblem, since it is important to make sure that knights in heavy armor do not raise their Speed stat too much, or not increase strength enough as it breaks the immersion that the unit is wearing heavy armor.
 
 ![image](https://user-images.githubusercontent.com/112586829/197306197-13cc3c4f-78f0-45b2-97e7-6a864a155a5b.png)
 
 **(As you can see, this knight has higher speed than defense!)**
 
-Luckily, serenesforests.net has datasets for this too.  This is one of the webpages that has tables with these variables, but I will also post a picture of what the dataframe looks like for reference.  https://serenesforest.net/radiant-dawn/characters/base-stats/
+Luckily, serenesforests.net has datasets with these variables.  I will also post a picture of what the dataframe looks like for reference.  https://serenesforest.net/radiant-dawn/characters/base-stats/
 
 ![image](https://user-images.githubusercontent.com/112586829/197306425-ff355bb4-efae-42e6-9fc1-3c96a0a829c0.png)
 
-Since both tables have the exact same values for the name, I wanted to be sure to do an inner join where the 'Name' column was the index, since the Name columns all match.  I did this for each game's table.
+Since both tables have the exact same values for the name, I wanted to be sure to do an inner join where the 'Name' column was the index, since the 'Name' row values are the same in both datasets.
 
 Here's the code chunk and the resulting table.
 
@@ -85,7 +85,7 @@ With some final merge statements, we can get all of the data onto one table.  He
 
 ### Dataset Complete
 
-Finally, we have all of the tables joined with an added Class, Mov, and Game Title variable.  If there is something you are interested in, I highly recommend creating your own dataset, even if one is already available.  It will exponentially increase the scope of what data you can analyze, but also set you apart from other data scientists, since you can also create datasets as well as explore them.
+Finally, we have all of the tables joined with an added Class, Movement, and Game Title variable.  If there is something you are interested in, I highly recommend creating your own dataset, even if one is already available.  Data scraping skills will exponentially increase the scope of what data you can analyze and set you apart from other data scientists.
 
 ![image](https://user-images.githubusercontent.com/112586829/197309710-68d4f92c-f0e1-44c6-a98a-ee26dd1391a1.png)
 
