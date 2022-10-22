@@ -4,7 +4,7 @@ title:  Statistics for Gamers, A Fire Emblem Dataset
 date:   2022-09-26
 author: Alden
 description: A quick overview on how I gathered data from video games for game design research
-image: https://user-images.githubusercontent.com/112586829/193084903-f030efe8-63d2-48ab-9d82-0a571d332221.png
+image: https://user-images.githubusercontent.com/112586829/197297566-24c3e4f4-a966-43b8-8207-bd3b93b6736a.png
 ---
 
 Datasets are blood of a statistician.  Just like how musicians can't perform without scores, statisticians can't explore data without datasets.  What if there are no dataset of what you want to research?  In this case, data scientists must make their own.  When creating a dataset (especially when combining tables from several different sources), there are countless ways that it can go wrong and tiny details that statisticians have to keep in mind.  I will be showing techniques of how to manipulate data in a dataset, as well as problems that can occur during the webscraping process.  
