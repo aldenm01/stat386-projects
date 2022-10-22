@@ -35,11 +35,11 @@ Note: The reason that I needed to assign RDTable to RDGrowths[0] is because pd_.
 
 ### Part 2: Joining Data
 
-While the data created by the above two code chunks is good, I want to increase the versatility of this data.  In addition to the growth rates of the characters, I think it's also important to include their class, origin game, and how many spaces they can move on the map.  Being able to analyze different units based on class is vital for the game design of Fire Emblem, since it is important to make sure that knights in heavy armor do not raise their Speed stat too much, or make their strength stat too low, as to break the immersion that the unit is an armored knight.
+While the data created by the above two code chunks is good, I want to increase the versatility of this data.  In addition to the growth rates of the characters, I think it's also important to include their class, origin game, and how many spaces they can move on the map.  Being able to analyze different units based on class is vital for the game design of Fire Emblem, since it is important to make sure that knights in heavy armor do not raise their Speed stat too much, or not increase strength enough, as it breaks the immersion that the unit is wearing heavy armor.
 
 ![image](https://user-images.githubusercontent.com/112586829/197306197-13cc3c4f-78f0-45b2-97e7-6a864a155a5b.png)
 
-# (As you can see, this knight has higher speed than she does defense!)
+**(As you can see, this knight has higher speed than defense!)**
 
 Luckily, serenesforests.net has datasets for this too.  This is one of the webpages that has tables with these variables, but I will also post a picture of what the dataframe looks like for reference.  https://serenesforest.net/radiant-dawn/characters/base-stats/
 
