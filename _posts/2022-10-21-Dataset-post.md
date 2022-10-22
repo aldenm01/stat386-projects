@@ -39,7 +39,7 @@ While the data created by the above two code chunks is good, I want to increase 
 
 ![image](https://user-images.githubusercontent.com/112586829/197306197-13cc3c4f-78f0-45b2-97e7-6a864a155a5b.png)
 
-(As you can see, this knight has higher speed than she does defense!)
+# (As you can see, this knight has higher speed than she does defense!)
 
 Luckily, serenesforests.net has datasets for this too.  This is one of the webpages that has tables with these variables, but I will also post a picture of what the dataframe looks like for reference.  https://serenesforest.net/radiant-dawn/characters/base-stats/
 
@@ -86,6 +86,8 @@ With some final merge statements, we can get all of the data onto one table.  He
 ### Dataset Complete
 
 Finally, we have all of the tables joined with an added Class, Mov, and Game Title variable.  If there is something you are interested in, I highly recommend creating your own dataset, even if one is already available.  It will exponentially increase the scope of what data you can analyze, but also set you apart from other data scientists, since you can also create datasets as well as explore them.
+
+![image](https://user-images.githubusercontent.com/112586829/197309710-68d4f92c-f0e1-44c6-a98a-ee26dd1391a1.png)
 
 The code used to make this dataset can be found in my github repository here.
 https://github.com/aldenm01/Blog_2_Code
