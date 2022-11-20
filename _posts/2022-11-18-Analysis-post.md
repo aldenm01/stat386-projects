@@ -61,3 +61,4 @@ From the image, we can see there is a huge difference between the amount of vote
 
 # Correlation Chart for Each Class Type
 
+![image](https://user-images.githubusercontent.com/112586829/202889405-947d8f2f-cba9-4963-a1e6-055d1116bd20.png)
