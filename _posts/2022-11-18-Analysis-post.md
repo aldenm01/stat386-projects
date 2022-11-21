@@ -22,8 +22,8 @@ For example, units in the knight class have a higher percentage of increasing de
 
 I have explained Fire Emblem in detail in my other posts, so if you want a more in-depth explanation, you can read about it on my two other blogs below.
 
-[Blog 1]https://aldenm01.github.io/stat386-projects/2022/09/26/Blog-Tutorial.html
-[Blog 2]https://aldenm01.github.io/stat386-projects/2022/09/26/Dataset-post.html
+[Blog 1](https://aldenm01.github.io/stat386-projects/2022/09/26/Blog-Tutorial.html)
+[Blog 2](https://aldenm01.github.io/stat386-projects/2022/09/26/Dataset-post.html)
 
 ## The Dataset
 The dataset explored in this post is from my previous blog.  However, I added class types for each unit.  For example, if a unit is a cavalier, they are a cavalry unit.
@@ -32,9 +32,9 @@ I felt that the amount of votes that a character got would be a great variable t
 
 Data from these polls were collected from the links below.
 
-[2017 Poll]https://fireemblem.fandom.com/wiki/Fire_Emblem_Heroes/Choose_Your_Legends_Results:_Round_1
+[2017 Poll](https://fireemblem.fandom.com/wiki/Fire_Emblem_Heroes/Choose_Your_Legends_Results:_Round_1)
 
-[2019 Poll]https://vote4.campaigns.fire-emblem-heroes.com/en-US/results (For data for newer characters)
+[2019 Poll](https://vote4.campaigns.fire-emblem-heroes.com/en-US/results) (For data for newer characters)
 
 # Question 1: Are certain classes more popular then others?
 
@@ -92,6 +92,8 @@ I decided to make my first regression plot only include rows in the data where t
 ![image](https://user-images.githubusercontent.com/112586829/202986524-a61b3070-9bcf-43d1-8cb3-16a1a02e6d2d.png) ![image](https://user-images.githubusercontent.com/112586829/202986552-23bfc29a-edd9-4c52-a36f-bf85246d1e2b.png) ![image](https://user-images.githubusercontent.com/112586829/202986563-1582eb1d-8533-4da3-abaf-516f6152a2a5.png) ![image](https://user-images.githubusercontent.com/112586829/202986577-d1ed3a15-3345-41b9-9e6b-8c73533d42d7.png) ![image](https://user-images.githubusercontent.com/112586829/202986603-9001522d-21e3-42c7-88a1-7702e234dcc0.png) ![image](https://user-images.githubusercontent.com/112586829/202986620-a6c5fab0-1f94-43db-9f7b-8d5ea023b107.png)
 
 In these charts, we can see the correlation of each variable for each class.  An interesting observation from this plot is that flying units have a much lower correlation between their health points and strength.  One other point that is interesting is the lack of significance in the relationship betwewen stats, as there are many relationships in these charts that do not have a strong correlation.  While these charts may seem a bit more cluttered, they make a great reference when I am designing a unit of a certain class and need a quick refresher on these correlations.
+
+A great article for explaining correlation matrix can be found [here](https://corporatefinanceinstitute.com/resources/excel/correlation-matrix/#:~:text=A%20correlation%20matrix%20is%20simply,patterns%20in%20the%20given%20data.)
 
 # Summing up the Findings
 
