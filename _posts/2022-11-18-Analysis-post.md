@@ -53,7 +53,7 @@ with units who have 6000 or less votes since 211 of the 264 data points are stil
 
 Compare:
 
-![image](https://user-images.githubusercontent.com/112586829/202889308-05758696-2050-430c-aee6-af6a1487e21d.png)
+![image](https://user-images.githubusercontent.com/112586829/203001713-ad3a21f9-5c94-4608-8d68-869e56653347.png)
 
 From the image, we can see there is a huge difference between the amount of votes even from first to second place.
 
