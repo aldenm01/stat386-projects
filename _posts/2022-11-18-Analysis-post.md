@@ -4,7 +4,7 @@ title:  Bridging the Gap Between Statistics and Gaming
 date:   2022-11-18
 author: Alden
 description: Data exploration showcasing how statistics has helped me on my game development project.
-image: (https://user-images.githubusercontent.com/112586829/203161852-eb23e364-3858-4208-97b1-c74519c33864.png)
+image: https://user-images.githubusercontent.com/112586829/203161852-eb23e364-3858-4208-97b1-c74519c33864.png
 ---
 
 Have you ever dreamed of designing your own video game?  For the average person, it may seem that the entirety of game development is writing code and creating assets.
