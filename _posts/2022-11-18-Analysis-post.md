@@ -17,8 +17,7 @@ of challenge that games aim to achieve.  I got to thinking, how could I use my s
 If you are unfamiliar with Fire Emblem, I will summarize it briefly.  Fire Emblem is a tactical role playing game where you level up soldiers to make them stronger.  Each stat for each unit has a different percent chance to increase by one point after leveling up.
 For example, units in the knight class have a higher percentage of increasing defense after leveling up when compared to a mage.
 
-![202888134-3ff2cffc-084a-4243-a999-aa8fca580c5d](https://user-images.githubusercontent.com/112586829/202984717-43e1eb13-34cf-470a-a3a7-4581f61eead9.png)
-![202888275-17d2dcb3-189a-4124-81cd-7170bc2317b9](https://user-images.githubusercontent.com/112586829/202984771-5b4065a8-8923-4371-94c5-fbe10a30cba1.png)
+![202888134-3ff2cffc-084a-4243-a999-aa8fca580c5d](https://user-images.githubusercontent.com/112586829/202999725-763f58c2-fea7-4e62-9345-85f891bb18e9.png)![202888275-17d2dcb3-189a-4124-81cd-7170bc2317b9](https://user-images.githubusercontent.com/112586829/202999656-82efcf30-d0bc-4b66-8583-c0f57e0be4ab.png)
 
 I have explained Fire Emblem in detail in my other posts, so if you want a more in-depth explanation, you can read about it on my two other blogs below.
 
@@ -81,9 +80,7 @@ Oswin: (Right): 598 Votes
 
 # Question 2: Are Strength and Defense Correlated?
 
-![image](https://user-images.githubusercontent.com/112586829/202888910-4fad2e77-e989-4f54-8ed3-d0736321b13f.png)
-
-![image](https://user-images.githubusercontent.com/112586829/202888451-7ff9996d-b899-43d4-acc1-4be9c40ff418.png)
+![image](https://user-images.githubusercontent.com/112586829/202888910-4fad2e77-e989-4f54-8ed3-d0736321b13f.png) ![image](https://user-images.githubusercontent.com/112586829/202888451-7ff9996d-b899-43d4-acc1-4be9c40ff418.png)
 
 I decided to make my first regression plot only include rows in the data where the unit is in an infantry class.  As we can see, strength and defense are positively correlated, and it is a slightly stronger correlation than when compared to all the data.  It seems that it is a good idea to make a unit's attack relative to its defense.
 
