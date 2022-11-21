@@ -62,14 +62,14 @@ From the image, we can see there is a huge difference between the amount of vote
 
 Here is a boxplot that gives a much better visual of the population.  We can see that infantry and flying units are popular, while armor units have an extremely low amount of votes.  A personal theory I have of why this is is because these units have much more unique and "cool" designs than armored units which I assume many players graviate to.  Armored units tend to have generic designs.
 
-(**Infantry Units:**)
+**Infantry Units:**
 
 ![image](https://user-images.githubusercontent.com/112586829/202975594-bb4afe9d-8435-4606-b107-3e10c81f99b1.png)  ![Screenshot 2022-11-20 230200](https://user-images.githubusercontent.com/112586829/202976856-4537696e-bd30-4ced-a889-665185f7aa37.png)  
 
 Nephenee (Left): 5,557 Votes  
 Masked Marth (Right): 5,420 Votes
 
-(**Armored Units:**)
+**Armored Units:**
 
 ![image](https://user-images.githubusercontent.com/112586829/202975800-3f4570f8-0eba-4932-aff1-e35bf1dac494.png)  ![image](https://user-images.githubusercontent.com/112586829/202979167-179e76bb-8660-4cb3-8357-54a4d5408c80.png)
 
