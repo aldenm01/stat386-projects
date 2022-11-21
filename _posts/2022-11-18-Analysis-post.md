@@ -1,19 +1,19 @@
 ---
 layout: post
-title:  Using Data Analysis in Video Game Development
+title:  Bridging the Gap Between Statistics and Gaming
 date:   2022-11-18
 author: Alden
 description: Data exploration showcasing how statistics has helped me on my game development project.
 image: https://user-images.githubusercontent.com/112586829/202991110-ced6018a-1717-4dfc-bb43-b49562f78387.png
 ---
 
-Have you ever dreamed of designing your own video game?  For the average person, it may seem that the entirety of game development is writing its code and creating the assets.
-However, there is a lot more to game design.  Learning how to balance games is an integral part of keeping them engaging.  Can you imagine playing a 
-game of chess where every piece you had was a queen while your opponent could only use pawns?  That is a game does not give the satisfaction of overcoming challenges that games aim to achieve.  I got to thinking, how could I use my statistics knowledge and data from the Fire Emblem series to help predict how to design character stats, as well as study what makes a character popular to players.
+Have you ever dreamed of designing your own video game?  For the average person, it may seem that the entirety of game development is writing code and creating assets.
+However, there is a lot more to game design.  Game balance is an integral part of what makes them engaging.  Can you imagine playing a 
+game of chess where every piece you had was a queen while your opponent could only use pawns?  That is a game does not give the satisfaction of overcoming challenges that games aim to achieve.  I asked myself, how could I use my statistics knowledge and data from the Fire Emblem series to help predict how to design character stats? What makes a character popular to players?
 
 ![202978436-dd4c4b06-378e-4d8e-b996-1781d33ee63e](https://user-images.githubusercontent.com/112586829/202990469-882280d0-6ea6-4cf4-83fd-0e548ff88030.png)
 
-If you are unfamiliar with Fire Emblem, I will summarize it briefly.  Fire Emblem is a tactical role playing game where you level up soldiers to make them stronger by making them defeat enemies.  Each stat for each unit has a different percent chance to increase by one point after leveling up.
+If you are unfamiliar with Fire Emblem, here is a brief summary.  Fire Emblem is a tactical role playing game where you level up soldiers to make them stronger by defeating enemies.  Each stat for has a different percent chance to increase by one point after leveling up for each character/unit.
 For example, units in the knight class have a higher percentage of increasing defense after leveling up when compared to a mage.
 
 ![202888134-3ff2cffc-084a-4243-a999-aa8fca580c5d](https://user-images.githubusercontent.com/112586829/202999725-763f58c2-fea7-4e62-9345-85f891bb18e9.png)![202888275-17d2dcb3-189a-4124-81cd-7170bc2317b9](https://user-images.githubusercontent.com/112586829/202999656-82efcf30-d0bc-4b66-8583-c0f57e0be4ab.png)
@@ -21,11 +21,12 @@ For example, units in the knight class have a higher percentage of increasing de
 I have explained Fire Emblem in detail in my other posts, so if you want a more in-depth explanation, you can read about it on my two other blogs below.
 
 [Blog 1](https://aldenm01.github.io/stat386-projects/2022/09/26/Blog-Tutorial.html)
+
 [Blog 2](https://aldenm01.github.io/stat386-projects/2022/09/26/Dataset-post.html)
 
 ## The Dataset
 The dataset explored in this post is from my previous blog.  However, I added class types for each unit.  For example, if a unit is a cavalier, they are a cavalry unit.
-If a unit is a knight, they are an armored unit.  The last column that was added was the amount of votes that each unit got in an official Fire Emblem popularity poll for the mobile game.  
+If a unit is a knight, they are an armored unit.  The last column that was added was the amount of votes that each unit got in an official Fire Emblem popularity poll for the mobile game, Fire Emblem Heroes.  
 I felt that the amount of votes that a character got would be a valuable as it should help visualize what makes a likeable unit for the average player.
 
 Data from these polls were collected from the links below.
@@ -48,7 +49,7 @@ I did figure out why it was so skewed.
 
 Main characters usually get a tremendous amount of votes compared to characters who don't.  While
 many players of the series love them, I decided to perform the rest of the analysis
-with units who have 6000 or less votes since this includes 211 of the 264 data points.
+with units who have 6000 or less votes since this still includes 211 of the 264 data points.
 
 Compare:
 
@@ -82,7 +83,7 @@ Oswin: (Right): 598 Votes
 ![image](https://user-images.githubusercontent.com/112586829/203157938-c16a5aae-f8ac-4bab-8f1c-3315f46262e0.png) ![image](https://user-images.githubusercontent.com/112586829/203157951-9803e159-d2d8-4fc9-9553-89537781c18b.png)
 
 
-I decided to make my first regression plot only include rows in the data where the unit is in an infantry class.  As we can see, strength and defense are positively correlated, and it is a slightly stronger correlation than when compared to all the data.  It seems that it is a good idea to make a unit's attack relative to its defense.
+My first regression plot only include rows in the data where the unit is in an infantry class.  From the graph, strength and defense are positively correlated, and it is a slightly stronger correlation than when compared to all the data.  It seems that it is a good idea to make a unit's attack relative to its defense.
 
 # Correlation Matrices for All Class Types:
 
@@ -99,4 +100,5 @@ From these charts, I better understand on how to design a tactical RPG like Fire
 ![image](https://user-images.githubusercontent.com/112586829/202995696-2d999235-cd59-4104-9322-1a9e6428df3d.png)
 
 Code and data used for this analysis can be found in this [repository](https://github.com/aldenm01/Blog_3_Data).
+As for my personal game project, I may post it in another blog when it has been worked on more.
 
