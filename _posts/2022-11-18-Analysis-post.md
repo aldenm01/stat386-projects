@@ -8,7 +8,7 @@ image: https://user-images.githubusercontent.com/112586829/203161852-eb23e364-38
 ---
 
 Have you ever dreamed of designing your own video game?  For the average person, it may seem that the entirety of game development is writing code and creating assets.
-However, there is a lot more to game design.  Game balance is an integral part of what makes them engaging.  Can you imagine playing a 
+However, game design is much deeper than this.  Game balance is an integral part of what makes them engaging.  Can you imagine playing a 
 game of chess where every piece you had was a queen while your opponent could only use pawns?  That is a game does not give the satisfaction of overcoming challenges that games aim to achieve.  I asked myself, how could I use my statistics knowledge and data from the Fire Emblem series to help predict how to design character stats? What makes a character popular to players?
 
 ![202978436-dd4c4b06-378e-4d8e-b996-1781d33ee63e](https://user-images.githubusercontent.com/112586829/202990469-882280d0-6ea6-4cf4-83fd-0e548ff88030.png)
@@ -25,9 +25,9 @@ I have explained Fire Emblem in detail in my other posts, so if you want a more 
 [Blog 2](https://aldenm01.github.io/stat386-projects/2022/09/26/Dataset-post.html)
 
 ## The Dataset
-The dataset explored in this post is from my previous blog.  However, I added class types for each unit.  For example, if a unit is a cavalier, they are a cavalry unit.
-If a unit is a knight, they are an armored unit.  The last column that was added was the amount of votes that each unit got in an official Fire Emblem popularity poll for the mobile game, Fire Emblem Heroes.  
-I felt that the amount of votes that a character got would be a valuable as it should help visualize what makes a likeable unit for the average player.
+The dataset explored in this post is from my previous blog.  However, I added class types for each unit.  For example, if a unit is a cavalier, he/she is a cavalry unit.
+If a unit is a knight, he/she is an armored unit.  The last column that was added was the amount of votes that each unit got in an official Fire Emblem popularity poll for the mobile game, Fire Emblem Heroes.  
+I felt that the amount of votes that a character got would be valuable as it should help visualize what makes a likeable unit for the average player.
 
 Data from these polls were collected from the links below.
 
@@ -83,19 +83,19 @@ Oswin: (Right): 598 Votes
 ![image](https://user-images.githubusercontent.com/112586829/203157938-c16a5aae-f8ac-4bab-8f1c-3315f46262e0.png) ![image](https://user-images.githubusercontent.com/112586829/203157951-9803e159-d2d8-4fc9-9553-89537781c18b.png)
 
 
-My first regression plot only include rows in the data where the unit is in an infantry class.  From the graph, strength and defense are positively correlated, and it is a slightly stronger correlation than when compared to all the data.  It seems that it is a good idea to make a unit's attack relative to its defense.
+My first regression plot only include rows in the data where the unit is an infantry class.  From the graph, strength and defense are positively correlated, and it is a slightly stronger correlation than when compared to all the data.  It seems that it is a good idea to make a unit's attack relative to its defense.
 
 # Correlation Matrices for All Class Types:
 
 ![image](https://user-images.githubusercontent.com/112586829/202986524-a61b3070-9bcf-43d1-8cb3-16a1a02e6d2d.png) ![image](https://user-images.githubusercontent.com/112586829/202986552-23bfc29a-edd9-4c52-a36f-bf85246d1e2b.png) ![image](https://user-images.githubusercontent.com/112586829/202986563-1582eb1d-8533-4da3-abaf-516f6152a2a5.png) ![image](https://user-images.githubusercontent.com/112586829/202986577-d1ed3a15-3345-41b9-9e6b-8c73533d42d7.png) ![image](https://user-images.githubusercontent.com/112586829/202986603-9001522d-21e3-42c7-88a1-7702e234dcc0.png) ![image](https://user-images.githubusercontent.com/112586829/202986620-a6c5fab0-1f94-43db-9f7b-8d5ea023b107.png)
 
-In these charts, we can see the correlation of each variable for each class.  An interesting observation from this plot is that flying units have a much lower correlation between their health points and strength.  Another interesting point is the lack of correlation betwewen stats, as there are many relationships that do not have a strong correlation.  While these graphs may seem a bit more cluttered, they make a great reference when I am designing a unit of a certain class and need a quick refresher on these correlations.
+In these charts, we can see the correlation of each variable for each class.  An interesting observation from this plot is that flying units have a much lower correlation between their health points and strength.  Another point is the lack of correlation betwewen stats, as there are many relationships that do not have a strong correlation.  Additionally, I actually predicted that the higher the strength, the more votes a character would get, but, interestingly, no stats have a strong relationship with the amount of votes at all.  While these graphs may seem cluttered, they make a great reference when I am designing a unit of a certain class and need a refresher on these correlations.
 
 A great article for explaining correlation matrix can be found [here](https://corporatefinanceinstitute.com/resources/excel/correlation-matrix/#:~:text=A%20correlation%20matrix%20is%20simply,patterns%20in%20the%20given%20data.)
 
 # Summing up the Findings
 
-From these charts, I better understand on how to design a tactical RPG like Fire Emblem.  Infantry and flying units are a favorite among players, so I will include several in my project while having few armored characters.  Additionally, strength and defense have a strong correlation with not just infantry units, but for all class types and the correlation matrices will be a great reference when designing units of all classes.  I'm glad that I was able to bridge my passion for data, Python, and video games by analyzing my own unique dataset.  I encourage all of my readers to do the same with their passions, and leave a comment below on how it has affected your life!  I hope you bring much to report!
+From these charts, I better understand on how to design a tactical RPG like Fire Emblem.  Infantry and flying units are a favorite among players, so I will include several in my project while having few armored characters.  Furthermore, strength and defense have a strong correlation with not just infantry units, but for all class types and the correlation matrices will be a great reference when designing units of all classes.  I'm glad that I was able to bridge my passion for data, Python, and video games by analyzing my own data.  I encourage all of my readers to do the same with what their passionate about, and leave a comment below on how it has affected your life!  I hope you bring much to report!
 
 ![image](https://user-images.githubusercontent.com/112586829/202995696-2d999235-cd59-4104-9322-1a9e6428df3d.png)
 
