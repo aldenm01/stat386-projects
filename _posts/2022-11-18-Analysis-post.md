@@ -89,7 +89,7 @@ My first regression plot only include rows in the data where the unit is an infa
 
 ![image](https://user-images.githubusercontent.com/112586829/202986524-a61b3070-9bcf-43d1-8cb3-16a1a02e6d2d.png) ![image](https://user-images.githubusercontent.com/112586829/202986552-23bfc29a-edd9-4c52-a36f-bf85246d1e2b.png) ![image](https://user-images.githubusercontent.com/112586829/202986563-1582eb1d-8533-4da3-abaf-516f6152a2a5.png) ![image](https://user-images.githubusercontent.com/112586829/202986577-d1ed3a15-3345-41b9-9e6b-8c73533d42d7.png) ![image](https://user-images.githubusercontent.com/112586829/202986603-9001522d-21e3-42c7-88a1-7702e234dcc0.png) ![image](https://user-images.githubusercontent.com/112586829/202986620-a6c5fab0-1f94-43db-9f7b-8d5ea023b107.png)
 
-In these charts, we can see the correlation of each variable for each class.  An interesting observation from this plot is that flying units have a much lower correlation between their health points and strength.  Another point is the lack of correlation betwewen stats, as there are many relationships that do not have a strong correlation.  Additionally, I actually predicted that the higher the strength, the more votes a character would get, but, interestingly, no stats have a strong relationship with the amount of votes at all.  While these graphs may seem cluttered, they make a great reference when I am designing a unit of a certain class and need a refresher on these correlations.
+In these charts, we can see the correlation of each variable for each class.  An interesting observation from this plot is that flying units have a much lower correlation between their health points and strength.  Another point is the lack of correlation betwewen stats, as there are many relationships that do not have a strong correlation.  Additionally, I actually predicted that the higher the strength, the more votes a character would get, but, interestingly, no stats have a strong relationship with the amount of votes at all.
 
 A great article for explaining correlation matrix can be found [here](https://corporatefinanceinstitute.com/resources/excel/correlation-matrix/#:~:text=A%20correlation%20matrix%20is%20simply,patterns%20in%20the%20given%20data.)
 
@@ -100,5 +100,6 @@ From these charts, I better understand on how to design a tactical RPG like Fire
 ![image](https://user-images.githubusercontent.com/112586829/202995696-2d999235-cd59-4104-9322-1a9e6428df3d.png)
 
 Code and data used for this analysis can be found in this [repository](https://github.com/aldenm01/Blog_3_Data).
+
 As for my personal game project, I may post it in another blog when it has been worked on more.
 
