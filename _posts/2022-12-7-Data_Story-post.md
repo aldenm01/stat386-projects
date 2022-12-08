@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Statistics that Stick | Making Data Meaningful
-date:   2022-11-18
+date:   2022-12-08
 author: Alden
 description: My data story of how I connected my major with my hobbies.
 image: https://user-images.githubusercontent.com/112586829/206369607-9bd5fe55-7032-465e-b7ac-0507427cf194.png
