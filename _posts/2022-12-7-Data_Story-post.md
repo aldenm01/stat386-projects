@@ -26,6 +26,7 @@ hypothesis proved to be false, it was still interesting to get an insight of how
 I thought would be significant were not.  If you are interested in a more in-depth look at my data gathering and exploration, you can refer to my previous blogs.
 
 [Web Scraping](https://aldenm01.github.io/stat386-projects/2022/09/26/Dataset-post.html)
+
 [Data Exploration](https://aldenm01.github.io/stat386-projects/2022/11/18/Analysis-post.html)
 
 However, as much as I love analyzing data for personal gratification, I also want to show something from this data journey is more interesting to 
