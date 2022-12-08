@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Alden's First Blog! We did it! # Make a title for your blog
+title: Alden's Data Science Blog
 email: aflore27@byu.edu # Add your email 
 description: >- # this means to ignore newlines until "baseurl:"
  This is my new blog!
