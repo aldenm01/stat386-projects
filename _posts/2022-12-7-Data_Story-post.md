@@ -4,7 +4,7 @@ title:  Data Story
 date:   2022-11-18
 author: Alden
 description: 
-image: ![image](https://user-images.githubusercontent.com/112586829/206369607-9bd5fe55-7032-465e-b7ac-0507427cf194.png)
+image: https://user-images.githubusercontent.com/112586829/206369607-9bd5fe55-7032-465e-b7ac-0507427cf194.png
 ---
 
 One thing that has always drawn me to statistics is just how it can be applied to anything.  If someone love movies,
