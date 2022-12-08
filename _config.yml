@@ -21,10 +21,10 @@
 title: Alden's Data Science Blog
 email: aflore27@byu.edu # Add your email 
 description: >- # this means to ignore newlines until "baseurl:"
- This is my new blog!
+ This is where I post about my data projects, stories, and findings.
 baseurl: "/stat386-projects" # keep this the same or change it to the name of the repository 
 url: "https://aldenm01.github.io" #  change this to "https://<your-github-username>.github.io"
-image: "assets/images/image5.jpg"
+image: "assets/images/statistics-graph-illustration.jpg"
 author: Alden
 copyright: AM # Your initials or what you want the copyright to be.  Leave empty for no copyright
 
