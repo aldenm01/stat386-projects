@@ -1,11 +1,13 @@
 ---
 layout: post
-title:  Data Story
+title:  Statistics that Stick: Making Data Meaningful
 date:   2022-11-18
 author: Alden
-description: 
+description: My data story of how I connected my major with my hobbies.
 image: https://user-images.githubusercontent.com/112586829/206369607-9bd5fe55-7032-465e-b7ac-0507427cf194.png
 ---
+
+## The Motivation
 
 One thing that has always drawn me to statistics is just how it can be applied to anything.  If someone love movies,
 you can find data that can answer many interesting questions lead to interesting observations. For example, a statistician can hypothesize that male actors 
@@ -15,6 +17,8 @@ they could compare the average amount of lines by gender depending on genre of m
 As for myself, this aspect of statistics had inspired the data that I have gathered over this past semester.  I wanted to utilize statistics for fun rather
 than just as another assignment.  As a fan of video games and game design, I wanted to collect data related to one of my favorites so I could have my passion
 for them reflect what were in my blogs.
+
+## The Journey
 
 My data project was for the role playing video game series, Fire Emblem.  Getting this data was surprisingly easy, only needing to scrape the data from serenesforest.net.  
 My initial inspiration was to study the stats of the characters in the game.  I made several several plots comparing several different variables.  While many of my
