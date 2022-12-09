@@ -10,7 +10,7 @@ image: https://user-images.githubusercontent.com/112586829/206369607-9bd5fe55-70
 ## The Motivation
 
 One thing that has always drawn me to statistics is just how it can be applied to anything.  If someone love movies,
-you can find data that can answer many interesting questions lead to interesting observations. For example, a statistician can hypothesize that male actors 
+he/she can find data that can answer many interesting questions lead to interesting observations. For example, a statistician can hypothesize that male actors 
 receive more lines than female actors in movies.  He/she can then gather data and make prove or disprove their analysis.  If he/she wanted to take it further,
 they could compare the average amount of lines by gender depending on genre of movie.  If they are lucky, their findings may be published for a good sum of money.  
 
@@ -20,10 +20,7 @@ for them reflect what were in my blogs.
 
 ## The Journey
 
-My data project was for the role playing video game series, Fire Emblem.  Getting this data was surprisingly easy, only needing to scrape the data from serenesforest.net.  
-My initial inspiration was to study the stats of the characters in the game.  I made several several plots comparing several different variables.  While many of my
-hypothesis proved to be false, it was still interesting to get an insight of how the game developers designed the characters attributes.  Many of the correlations
-I thought would be significant were not.  If you are interested in a more in-depth look at my data gathering and exploration, you can refer to my previous blogs.
+My data project was for the role playing video game series, Fire Emblem.  Getting this data was surprisingly easy, only needing to scrape the data from serenesforest.net.  My initial inspiration was to study the stats of the characters in the game.  I made several several plots comparing several different variables.  While many of my hypothesis proved to be false, it was still interesting to get an insight of how the game developers designed the characters attributes.  Many of the correlations I thought would be significant were not.  If you are interested in a more in-depth look at my data gathering and exploration, you can refer to my previous blogs.
 
 [Web Scraping](https://aldenm01.github.io/stat386-projects/2022/09/26/Dataset-post.html)
 
